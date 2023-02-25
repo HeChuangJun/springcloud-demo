@@ -10,7 +10,7 @@
 
 
 	<groupId>com.example</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>springcloud-oauth2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springcloud-oauth2</name>
 	<description>Demo project for Spring Boot</description>

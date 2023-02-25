@@ -16,6 +16,7 @@
         <module>springcloud-server2</module>
         <module>springcloud-oauth2</module>
         <module>springcloud-registry</module>
+        <module>springcloud-common</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
