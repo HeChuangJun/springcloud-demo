@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.UserMapper">
+    <select id="loadByUserName" resultType="com.example.demo.domain.User">
+        select * from user where username = #{username}
+    </select>
+    <select id="getAuthorities" resultType="java.lang.String">
+    SELECT
+        rp.percod
+    FROM
+        USER u
+        LEFT JOIN user_role ur ON u.usrcod = ur.usrcod
+        LEFT JOIN role_permissions rp ON ur.rolcod = rp.rolcod
+    WHERE
+        u.username = #{username}
+    </select>
+</mapper>
